@@ -1,0 +1,48 @@
+/* App.css */
+.app {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .todo-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .todo-column {
+    flex: 1;
+  }
+  
+  .todo-list {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+  }
+  
+  .reset-button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-top: 20px;
+  }
+  
+  .reset-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* index.css */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  

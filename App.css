@@ -1,0 +1,63 @@
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-column {
+  flex: 1;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.todo-list li.completed {
+  text-decoration: line-through;
+}
+
+.no-todos {
+  color: #777;
+}
+
+.reset-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #ff4136;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
