@@ -1,0 +1,58 @@
+:root {
+  --bg: #0b1020;
+  --panel: #131a2a;
+  --panel-2: #0f1525;
+  --text: #e9edf8;
+  --muted: #9aa6c1;
+  --brand: #6ca2ff;
+  --brand-2: #83e6ff;
+  --accent: #ffd166;
+  --danger: #f65b5b;
+  --success: #41d695;
+  --border: #22314f;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: radial-gradient(1200px 800px at 20% -10%, #0f1930 0%, var(--bg) 60%), var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+button {
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #18223a 0%, #0c1222 100%);
+  color: var(--text);
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+button:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,0,0,0.25); }
+button:active { transform: translateY(0px); }
+
+input, textarea {
+  background: var(--panel-2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.card {
+  background: linear-gradient(180deg, #151d33 0%, #0f1629 100%);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.toolbar {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}

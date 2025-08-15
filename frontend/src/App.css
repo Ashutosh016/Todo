@@ -1,0 +1,47 @@
+.App {
+  height: 100%;
+}
+.editor-shell {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+.sidebar {
+  padding: 12px;
+  border-right: 1px solid var(--border);
+  background: linear-gradient(180deg, #0f1629 0%, #0b1120 100%);
+}
+.sidebar h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+.node-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+.canvas-area {
+  position: relative;
+}
+.flow-container {
+  height: 100%;
+}
+.toolbar {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+.submit {
+  background: linear-gradient(180deg, #1c2a4a 0%, #0b1224 100%);
+  border-color: var(--brand);
+}
+.reset {
+  background: linear-gradient(180deg, #2b3a1a 0%, #0e1a10 100%);
+  border-color: var(--success);
+}
